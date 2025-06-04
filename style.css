@@ -1,0 +1,118 @@
+.content h1 {
+  color: rgb(109, 7, 62);
+  text-align: center;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#portfolio li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#portfolio li:hover {
+  background: #611010;
+  padding: 25px 36px;
+  text-align: center;
+  
+}
+
+#portfolio a {
+  text-decoration: none;
+  color: #532cc8;
+  text-align: center;
+}
+
+#allcontents {
+  text-align: center;
+        max-width: 800px;
+      margin:auto;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+
+
+
+<head>
+body{
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgxBT8qgv8UZVx7NzN1Zypz8crw0SI7n6EWg&s);
+          background-repeat: no repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          color: rgb(0,0,0);
+      padding: 10px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+#all-contents {
+      max-width: 800px;
+      margin:auto;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+h1 {
+      display: flex;
+      align-items: center;
+      color: black;
+      flex: 1;
+      margin: 0;
+}
+
+#nav-ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+}
+
+.nav-li {
+      display: inline-block;
+      padding: 0 10px;
+}
+
+    a {
+      text-decoration:none;
+      color: #060202;
+}
+
+main {
+    background-color: #df90d6;
+    display: flex;
+    margin-top: 20px;
+    box-shadow: 5px 5px rgb(0,0,0);
+}
+
+
+.content {
+    flex: 1;
+    padding: 15px;
+}
+
+
+h2, h3 {
+    margin: 7px;
+}
+
+.nav-li {
+  text-shadow:
+  0 1px 0 #17202A,
+  0 2px 0 #17202A,
+  0 7px 0 #17202A,
+  0 8px 0 #17202A,
+  0 11px 0 #17202A,
+  0 12px 0 #17202A;
+}
+</style>
+  </head>
