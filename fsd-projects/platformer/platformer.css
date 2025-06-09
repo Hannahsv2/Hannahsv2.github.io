@@ -3,8 +3,14 @@ body {
 }
 
 canvas {
-  background-color: lightblue;
+  background-image:url(https://t3.ftcdn.net/jpg/05/49/87/48/360_F_549874832_odaIb0fUsf27oYS6qXj392f5673mRSW5.jpg);
   margin: 20px;
+  background-repeat: no repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+      }
 }
 
 img {
