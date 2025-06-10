@@ -80,7 +80,7 @@ $(function () {
     document.body.style.backgroundImage =
       "url('https://t3.ftcdn.net/jpg/05/49/87/48/360_F_549874832_odaIb0fUsf27oYS6qXj392f5673mRSW5.jpg')";
     // TODO 1 - Enable the Grid
-    toggleGrid();
+    //toggleGrid();
 
     // TODO 2 - Create Platforms
     createPlatform(500, 555, 130, 30, "lavender"); // top wall
@@ -98,24 +98,27 @@ $(function () {
     createPlatform(1100, 0, 120, 270, "lavender");
     createPlatform(500, 250, 400, 10, "lavender");
     createPlatform(1000, 400, 100, 10, "lavender");
-    createPlatform(1350, 250, 50, 10, "lavendner");
-    createPlatform(1220, 150, 80, 10, "lavender");
+    createPlatform(1350, 290, 50, 10, "lavendner");
+    createPlatform(1220, 170, 80, 10, "lavender");
     createPlatform(1220, 700, 200, 200, "green");
     createPlatform(0, 700, 100, 100, "green");
+    createPlatform(1290,570,50,10,"lavender");
+    createPlatform(1220, 470, 50, 10, "lavender");
+    
+
     // TODO 3 - Create Collectables
 
     createCollectable("database", 250, 170, 0.5, 0.7);
     createCollectable("database", 550, 170, 0.5, 0.7);
     createCollectable("database", 820, 550, 1.2, 0.9);
     createCollectable("database", 1220, 110, 0.5, 0.5);
+    createCollectable("database", 1300, 650, 0.5, 0.5);
 
     // TODO 4 - Create Cannons
-    createCannon("left", 290, 2000, 40, 30);
+    createCannon("left", 290, 1800, 40, 30);
     createCannon("bottom", 400, 1100, 10, 50);
     createCannon("left", 150, 1200, 40);
 createCannon("left",710,100,100,60)
-
-
     
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
