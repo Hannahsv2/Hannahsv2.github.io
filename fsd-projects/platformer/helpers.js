@@ -748,4 +748,6 @@ function handleKeyUp(e) {
 
 function loadJson() {
   getJSON("halle.json", JsonFunction); //runs this before the setup because of timing things
+
+
 }
