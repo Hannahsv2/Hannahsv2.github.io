@@ -42,7 +42,7 @@
         var box = jQuery(".box"); // reference to the HTML .box element
         var board = jQuery(".board"); // reference to the HTML .board element
         var boardWidth = board.width(); // the maximum X-Coordinate of the screen
-
+        var boardHeight = board.height();
         // Every 50 milliseconds, call the update Function (see below)
         setInterval(update, 50);
 
@@ -50,8 +50,9 @@
         box.on("click", handleBoxClick);
 
         // moves the Box to a new position on the screen along the X-Axis
-        function moveBoxTo() {
-          box.css("left", positionX);
+        function moveBoxTo(newPositionX, newPositionY) {
+          box.css("left", newPositionX);
+          box.css("top", newPositionY);
         }
 
         // changes the text displayed on the Box
@@ -66,7 +67,11 @@
         // TODO 2 - Variable declarations
         var positionX = 0;
         var points = 0;
-        var speed = 10;
+        var speedX = 10;
+        var positionY = 0;
+        var speedY = 10;
+        var colorStr = "rgb(100, 60, 150)";
+        box.css("background-color", colorStr);
 
         /*
       This Function will be called 20 times/second. Each time it is called,
@@ -74,13 +79,20 @@
       turn it around!
       */
         function update() {
-          positionX = positionX + speed;
-          moveBoxTo(positionX);
+          positionX = positionX + speedX;
+          positionY = positionY + speedY;
+          moveBoxTo(positionX, positionY);
           if (positionX > boardWidth) {
-            speed *= -1;
+            speedX *= -1;
           }
           if (positionX < 0) {
-            speed *= -1;
+            speedX *= -1;
+          }
+          if (positionY < boardHeight) {
+            speedY *= -1;
+          }
+          if (positionY > -1) {
+            speedY *= -1;
           }
         }
 
@@ -90,9 +102,12 @@
       the left side of the screen.
       */
         function handleBoxClick() {
-          positionX = 0;
+          var randNumX = Math.random() * boardWidth;
+          var randNumY = Math.random() * boardHeight;
+          positionX = randNumX;
+          positionY = randNumY;
           points += 1;
-          speed = 3 * points + 10
+          speedX = 3 * points + 10;
           changeBoxText(points);
         }
       })();
